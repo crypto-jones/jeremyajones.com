@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 import { Element } from 'react-scroll';
 
@@ -11,6 +11,10 @@ import {
   Thumbnail,
   Astyle,
   FullSize,
+  ModalTextWrapper,
+  ModalTitle,
+  ModalSubTitle,
+  ModalDescription,
 } from './ProjectStyles';
 
 import proofd from '../../assets/01.jpg';
@@ -84,12 +88,25 @@ class Projects extends Component {
 
         {/* Modal Proofd*/}
         <Modal size="lg" isOpen={this.state.modal} toggle={this.toggleProofd}>
-          <ModalHeader toggle={this.toggleProofd}>Proofd</ModalHeader>
           <ModalBody>
             <FullSize src={proofd} style={fullSize} alt="Proofd" />
           </ModalBody>
-          <ModalBody>A blockchain verification platform</ModalBody>
-          <ModalFooter>
+          <ModalHeader style={{ paddingTop: '0' }}>
+            <ModalTextWrapper>
+              <ModalTitle>Proofd</ModalTitle>
+              <ModalSubTitle>
+                A blockchain enabled verification platform
+              </ModalSubTitle>
+              <ModalDescription>
+                Proofd allows users to securely link a hash of any data, such as
+                important documents, to the Bitcoin blockchain. It was built
+                with React, Redux, Styled Components, Node.js, Express, and
+                PostgreSQL with Chainpoint, DocuSign, Auth0, and Stripe API
+                integration.
+              </ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalHeader toggle={this.toggleProofd}>
             <Astyle href="https://proofd.app" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
@@ -100,7 +117,7 @@ class Projects extends Component {
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-          </ModalFooter>
+          </ModalHeader>
         </Modal>
       </Element>
     );

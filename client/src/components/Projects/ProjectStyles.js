@@ -46,7 +46,28 @@ export const Astyle = styled.a`
   color: #708090;
   padding: 0 15px;
   border-radius: 10px;
+
   &:hover {
     color: #e31b6d;
   }
+`;
+
+export const ModalTextWrapper = styled.div`
+  padding: 0 15px;
+`;
+
+export const ModalTitle = styled.h2`
+  font-family: 'Arvo', serif;
+  font-weight: 600;
+  color: #444;
+`;
+
+export const ModalSubTitle = styled.h4`
+  font-family: 'Arvo', serif;
+  color: #c0c0c0;
+`;
+
+export const ModalDescription = styled.p`
+  font-family: 'Arvo', serif;
+  color: #444;
 `;
