@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './ButtonStyles';
+import { CustomButton } from './ButtonStyles';
 
 const NavButton = props => {
   let btnName = props.name;
@@ -11,7 +11,7 @@ const NavButton = props => {
   let onClick = props.onClick;
 
   return (
-    <Button
+    <CustomButton
       color={color}
       bgColor={bgColor}
       border={border}
@@ -20,7 +20,7 @@ const NavButton = props => {
       onClick={onClick}
     >
       {btnName}
-    </Button>
+    </CustomButton>
   );
 };
 
