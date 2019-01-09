@@ -88,9 +88,7 @@ class Projects extends Component {
           <ModalBody>
             <FullSize src={proofd} style={fullSize} alt="Proofd" />
           </ModalBody>
-          <ModalBody onClick={this.toggleProofd}>
-            A blockchain verification platform
-          </ModalBody>
+          <ModalBody>A blockchain verification platform</ModalBody>
           <ModalFooter>
             <Astyle href="https://proofd.app" target="_blank">
               <i className="fas fa-globe fa-2x" />
