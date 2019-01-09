@@ -24,7 +24,6 @@ export const ThumbnailContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // width: 100%;
   margin-top: 60px;
 `;
 
@@ -34,5 +33,14 @@ export const Thumbnail = styled.img`
 
   &:hover {
     cursor: pointer;
+  }
+`;
+
+export const Astyle = styled.a`
+  color: #708090;
+  padding: 0 15px;
+  border-radius: 10px;
+  &:hover {
+    color: #e31b6d;
   }
 `;

@@ -9,6 +9,7 @@ import {
   ThumbnailContainer,
   ContentWrapper,
   Thumbnail,
+  Astyle,
 } from './ProjectStyles';
 
 import proofd from '../../assets/01.jpg';
@@ -19,7 +20,7 @@ import reactMovies from '../../assets/05.jpg';
 import walletWatcher from '../../assets/06.jpg';
 
 const thumbSize = { width: '370px', height: '217px' };
-const fullSize = { width: '740px', height: '434px' };
+const fullSize = { width: '96%' };
 
 class Projects extends Component {
   state = {
@@ -90,22 +91,16 @@ class Projects extends Component {
             A blockchain verification platform
           </ModalBody>
           <ModalFooter>
-            <Button
-              color="info"
-              onClick={this.toggleProofd}
-              href="https://proofd.app"
-              target="_blank"
-            >
-              View Site
-            </Button>{' '}
-            <Button
-              color="secondary"
+            <Astyle href="https://proofd.app" target="_blank">
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{' '}
+            <Astyle
               onClick={this.toggleProofd}
               href="https://github.com/Lambda-School-Labs/ChainPointDocusign"
               target="_blank"
             >
-              Repo
-            </Button>
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
           </ModalFooter>
         </Modal>
       </Element>
