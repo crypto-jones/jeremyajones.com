@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
-import { HomeContainer, HeaderContainer, Highlight } from './HomeStyles.js';
+import {
+  HomeContainer,
+  HeaderContainer,
+  TextContainer,
+  Highlight,
+} from './HomeStyles.js';
+import NavButton from '../Button/Button.js';
 
 class Home extends Component {
   render() {
@@ -17,7 +23,7 @@ class Home extends Component {
                 },
               },
               color: {
-                value: ['#E31B6D', '00d8ff'],
+                value: ['#E31B6D', '#00d8ff'],
               },
               shape: {
                 type: 'circle',
@@ -114,8 +120,17 @@ class Home extends Component {
           }}
         />
         <HeaderContainer>
-          <Highlight>Jeremy A. Jones</Highlight>
-          Full Stack Developer
+          <TextContainer>
+            <Highlight>Jeremy A. Jones</Highlight>
+            Full Stack Developer
+          </TextContainer>
+          <NavButton
+            name="See My Work"
+            color="#fff"
+            border="2px solid #fff"
+            bgColor="#E31B6D"
+            borderColor="#E31B6D"
+          />
         </HeaderContainer>
       </HomeContainer>
     );

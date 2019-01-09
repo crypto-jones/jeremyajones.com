@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './styles/NavStyles.js';
+import { Button } from './ButtonStyles';
 
 const NavButton = props => {
   let btnName = props.name;
@@ -7,6 +7,7 @@ const NavButton = props => {
   let bgColor = props.bgColor;
   let border = props.border;
   let hoverFontColor = props.hoverFontColor;
+  let borderColor = props.borderColor;
 
   return (
     <Button
@@ -14,6 +15,7 @@ const NavButton = props => {
       bgColor={bgColor}
       border={border}
       hoverFontColor={hoverFontColor}
+      borderColor={borderColor}
     >
       {btnName}
     </Button>

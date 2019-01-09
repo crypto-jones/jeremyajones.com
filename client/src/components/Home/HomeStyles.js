@@ -7,12 +7,21 @@ export const HomeContainer = styled.div`
 
 export const HeaderContainer = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: column; /* NEW */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   position: relative;
   top: 40%;
-  text-align: center;
-  font-family: 'Arvo', serif;
+`;
+
+export const TextContainer = styled.div`
   font-size: 2.2rem;
+  text-align: center;
   color: white;
+  margin-bottom: 10px;
 `;
 
 export const Highlight = styled.div`
