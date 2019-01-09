@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const CustomButton = styled.div`
-  width: 150px;
-  height: 30px;
+  width: 180px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;

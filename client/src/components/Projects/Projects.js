@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import { Element } from 'react-scroll';
@@ -90,11 +90,21 @@ class Projects extends Component {
             A blockchain verification platform
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggleProofd}>
-              Do Something
+            <Button
+              color="info"
+              onClick={this.toggleProofd}
+              href="https://proofd.app"
+              target="_blank"
+            >
+              View Site
             </Button>{' '}
-            <Button color="secondary" onClick={this.toggleProofd}>
-              Cancel
+            <Button
+              color="secondary"
+              onClick={this.toggleProofd}
+              href="https://github.com/Lambda-School-Labs/ChainPointDocusign"
+              target="_blank"
+            >
+              Repo
             </Button>
           </ModalFooter>
         </Modal>
