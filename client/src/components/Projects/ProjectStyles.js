@@ -33,7 +33,13 @@ export const Thumbnail = styled.img`
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.05);
   }
+`;
+
+export const FullSize = styled.img`
+  margin: 15px;
+  border: 5px solid black;
 `;
 
 export const Astyle = styled.a`

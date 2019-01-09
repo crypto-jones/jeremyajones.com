@@ -10,6 +10,7 @@ import {
   ContentWrapper,
   Thumbnail,
   Astyle,
+  FullSize,
 } from './ProjectStyles';
 
 import proofd from '../../assets/01.jpg';
@@ -85,7 +86,7 @@ class Projects extends Component {
         <Modal size="lg" isOpen={this.state.modal} toggle={this.toggleProofd}>
           <ModalHeader toggle={this.toggleProofd}>Proofd</ModalHeader>
           <ModalBody>
-            <Thumbnail src={proofd} style={fullSize} alt="Proofd" />
+            <FullSize src={proofd} style={fullSize} alt="Proofd" />
           </ModalBody>
           <ModalBody onClick={this.toggleProofd}>
             A blockchain verification platform
