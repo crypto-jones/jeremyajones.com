@@ -8,6 +8,7 @@ const NavButton = props => {
   let border = props.border;
   let hoverFontColor = props.hoverFontColor;
   let borderColor = props.borderColor;
+  let onClick = props.onClick;
 
   return (
     <Button
@@ -16,6 +17,7 @@ const NavButton = props => {
       border={border}
       hoverFontColor={hoverFontColor}
       borderColor={borderColor}
+      onClick={onClick}
     >
       {btnName}
     </Button>
