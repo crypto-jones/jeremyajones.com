@@ -19,7 +19,7 @@ class Home extends Component {
                 value: 80,
                 density: {
                   enable: true,
-                  value_area: 900,
+                  value_area: 800,
                 },
               },
               color: {
@@ -36,7 +36,7 @@ class Home extends Component {
                 },
               },
               opacity: {
-                value: 0.5,
+                value: 1,
                 random: false,
                 anim: {
                   enable: false,
@@ -58,7 +58,7 @@ class Home extends Component {
               line_linked: {
                 enable: true,
                 distance: 225,
-                color: '#ffffff',
+                color: '#fff',
                 opacity: 0.9,
                 width: 0.2,
               },

@@ -18,15 +18,23 @@ export const HeaderContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   text-align: center;
   color: white;
   margin-bottom: 10px;
+
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Highlight = styled.div`
-  font-size: 3rem;
+  font-size: 4rem;
   padding-bottom: 5px;
   font-weight: 700;
   color: #e31b6d;
+
+  @media (max-width: 600px) {
+    font-size: 2.8rem;
+  }
 `;
