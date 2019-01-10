@@ -32,6 +32,9 @@ class Projects extends Component {
     modalProofd: false,
     modalCrytpoGym: false,
     modalProfJones: false,
+    modalBCAD: false,
+    modalReactMovies: false,
+    modalWalletWatcher: false,
   };
 
   toggleProofd = () => {
@@ -49,6 +52,24 @@ class Projects extends Component {
   toggleProfJones = () => {
     this.setState({
       modalProfJones: !this.state.modalProfJones,
+    });
+  };
+
+  toggleBCAD = () => {
+    this.setState({
+      modalBCAD: !this.state.modalBCAD,
+    });
+  };
+
+  toggleReactMovies = () => {
+    this.setState({
+      modalReactMovies: !this.state.modalReactMovies,
+    });
+  };
+
+  toggleWalletWatcher = () => {
+    this.setState({
+      modalWalletWatcher: !this.state.modalWalletWatcher,
     });
   };
 
@@ -80,19 +101,19 @@ class Projects extends Component {
               <Thumbnail
                 src={bcad}
                 style={thumbSize}
-                onClick={this.openLightbox}
+                onClick={this.toggleBCAD}
                 alt="BC/AD"
               />
               <Thumbnail
                 src={reactMovies}
                 style={thumbSize}
-                onClick={this.openLightbox}
+                onClick={this.toggleReactMovies}
                 alt="React Movies"
               />
               <Thumbnail
                 src={walletWatcher}
                 style={thumbSize}
-                onClick={this.openLightbox}
+                onClick={this.toggleWalletWatcher}
                 alt="WalletWatcher"
               />
             </ThumbnailContainer>
@@ -127,7 +148,6 @@ class Projects extends Component {
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
             <Astyle
-              onClick={this.toggleProofd}
               href="https://github.com/Lambda-School-Labs/ChainPointDocusign"
               target="_blank"
             >
@@ -164,7 +184,6 @@ class Projects extends Component {
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
             <Astyle
-              onClick={this.toggleCryptoGym}
               href="https://github.com/helios-coop/cryptogym"
               target="_blank"
             >
@@ -204,11 +223,132 @@ class Projects extends Component {
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
             <Astyle
-              onClick={this.toggleProfJones}
-              href="hhttps://github.com/crypto-jones/Prof-Jones-Website"
+              href="https://github.com/crypto-jones/Prof-Jones-Website"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
+            </Astyle>
+          </ModalHeader>
+        </Modal>
+
+        {/* Modal BCAD */}
+        <Modal size="lg" isOpen={this.state.modalBCAD} toggle={this.toggleBCAD}>
+          <ModalBody>
+            <FullSize
+              src={bcad}
+              style={fullSize}
+              alt="Blockchain Artifact Database"
+            />
+          </ModalBody>
+          <ModalHeader style={{ paddingTop: '0' }}>
+            <ModalTextWrapper>
+              <ModalTitle>BC/AD — Blockchain Artifact Database</ModalTitle>
+              <ModalSubTitle>
+                A platform for authenticating artifacts on Ethereum
+              </ModalSubTitle>
+              <ModalDescription>
+                BC/AD was an ETH San Francisco 2018 project. It's a system for
+                authenticating unique artifacts, antiques, and collectibles
+                verified by experts. It was built with React, Express, Node.js,
+                Web3.js, and Solidity with Twitter API integration.
+              </ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalHeader toggle={this.toggleBCAD}>
+            <Astyle
+              href="https://devpost.com/software/b-c-a-d-boock-chain-artifact-database"
+              target="_blank"
+            >
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{' '}
+            <Astyle href="https://github.com/BC-AD/BC-AD" target="_blank">
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
+            <Astyle href="https://youtu.be/Vkq6gAvUT5M" target="_blank">
+              <i className="fab fa-youtube fa-2x" />
+            </Astyle>
+          </ModalHeader>
+        </Modal>
+
+        {/* Modal React Movies */}
+        <Modal
+          size="lg"
+          isOpen={this.state.modalReactMovies}
+          toggle={this.toggleReactMovies}
+        >
+          <ModalBody>
+            <FullSize src={reactMovies} style={fullSize} alt="React Movies" />
+          </ModalBody>
+          <ModalHeader style={{ paddingTop: '0' }}>
+            <ModalTextWrapper>
+              <ModalTitle>React Movies</ModalTitle>
+              <ModalSubTitle>
+                A UI-focused app that displays details & trailers of films
+              </ModalSubTitle>
+              <ModalDescription>
+                React Movies allows users to search for in real-time any film
+                ever published to the Movie DB with blazing fast rendering. A
+                user can click on the movie card, watch the trailer and get more
+                details. This app was built with React with the Movie Database
+                API integration.
+              </ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalHeader toggle={this.toggleReactMovies}>
+            <Astyle
+              href="https://react-movies-jeremy-jones.netlify.com"
+              target="_blank"
+            >
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{' '}
+            <Astyle
+              href="https://github.com/crypto-jones/react-movies"
+              target="_blank"
+            >
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
+          </ModalHeader>
+        </Modal>
+
+        {/* Modal WalletWatcher */}
+        <Modal
+          size="lg"
+          isOpen={this.state.modalWalletWatcher}
+          toggle={this.toggleWalletWatcher}
+        >
+          <ModalBody>
+            <FullSize src={walletWatcher} style={fullSize} alt="React Movies" />
+          </ModalBody>
+          <ModalHeader style={{ paddingTop: '0' }}>
+            <ModalTextWrapper>
+              <ModalTitle>WalletWatcher</ModalTitle>
+              <ModalSubTitle>
+                An app that monitors Ethereum addresses
+              </ModalSubTitle>
+              <ModalDescription>
+                WalletWatcher was a Lambda School Hackathon 2018 project that
+                was awarded a third place prize and "most likely to become a
+                startup." It allows users to monitor any ETH address and receive
+                SMS notifications. It was built with React, Express, Node.js,
+                and MongoDB with Twilio and Etherscan API integration.
+              </ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalHeader toggle={this.toggleWalletWatcher}>
+            <Astyle href="https://walletwatcher.netlify.com" target="_blank">
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{' '}
+            <Astyle
+              href="https://github.com/wallet-watcher/wallet-watcher"
+              target="_blank"
+            >
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
+            <Astyle
+              href="https://www.youtube.com/watch?v=DmIB3gslWdg"
+              target="_blank"
+            >
+              <i className="fab fa-youtube fa-2x" />
             </Astyle>
           </ModalHeader>
         </Modal>
