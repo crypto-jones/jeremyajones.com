@@ -31,19 +31,24 @@ class Projects extends Component {
   state = {
     modalProofd: false,
     modalCrytpoGym: false,
+    modalProfJones: false,
   };
 
   toggleProofd = () => {
-    console.log('clicked');
     this.setState({
       modalProofd: !this.state.modalProofd,
     });
   };
 
   toggleCryptoGym = () => {
-    console.log('clicked');
     this.setState({
       modalCrytpoGym: !this.state.modalCrytpoGym,
+    });
+  };
+
+  toggleProfJones = () => {
+    this.setState({
+      modalProfJones: !this.state.modalProfJones,
     });
   };
 
@@ -69,7 +74,7 @@ class Projects extends Component {
               <Thumbnail
                 src={profJones}
                 style={thumbSize}
-                onClick={this.openLightbox}
+                onClick={this.toggleProfJones}
                 alt="Professor Jones Music"
               />
               <Thumbnail
@@ -161,6 +166,46 @@ class Projects extends Component {
             <Astyle
               onClick={this.toggleCryptoGym}
               href="https://github.com/helios-coop/cryptogym"
+              target="_blank"
+            >
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
+          </ModalHeader>
+        </Modal>
+
+        {/* Modal Professor Jones Music */}
+        <Modal
+          size="lg"
+          isOpen={this.state.modalProfJones}
+          toggle={this.toggleProfJones}
+        >
+          <ModalBody>
+            <FullSize
+              src={profJones}
+              style={fullSize}
+              alt="Professor Jones Music"
+            />
+          </ModalBody>
+          <ModalHeader style={{ paddingTop: '0' }}>
+            <ModalTextWrapper>
+              <ModalTitle>Professor Jones Music</ModalTitle>
+              <ModalSubTitle>
+                A modern website for a musical artist
+              </ModalSubTitle>
+              <ModalDescription>
+                ProfessorJonesMusic.com is a site I built to showcase my music
+                as well as my visual art. It was built with React, Express, and
+                Node.js with YouTube, Bandsintown, and Stripe API integration.
+              </ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalHeader toggle={this.toggleProfJones}>
+            <Astyle href="https://www.professorjonesmusic.com" target="_blank">
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{' '}
+            <Astyle
+              onClick={this.toggleProfJones}
+              href="hhttps://github.com/crypto-jones/Prof-Jones-Website"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
