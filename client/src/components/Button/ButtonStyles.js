@@ -11,6 +11,7 @@ export const CustomButton = styled.div`
   margin: 10px;
   padding: 10px;
   font-size: 1.2rem;
+  font-family: 'Arvo', serif;
 
   &:hover {
     background-color: ${props => props.bgColor};

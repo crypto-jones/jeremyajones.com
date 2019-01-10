@@ -71,3 +71,9 @@ export const ModalDescription = styled.p`
   font-family: 'Arvo', serif;
   color: #444;
 `;
+
+export const ButtonWrapper = styled.a`
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+`;

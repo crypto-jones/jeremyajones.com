@@ -15,7 +15,10 @@ import {
   ModalTitle,
   ModalSubTitle,
   ModalDescription,
+  ButtonWrapper,
 } from './ProjectStyles';
+
+import Button from '../Button/Button';
 
 import proofd from '../../assets/01.jpg';
 import cryptoGym from '../../assets/02.jpg';
@@ -117,6 +120,21 @@ class Projects extends Component {
                 alt="WalletWatcher"
               />
             </ThumbnailContainer>
+            <ButtonWrapper
+              href="https://www.thehackhive.com/profile/jeremyjones"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <Button
+                name="Full Portfolio"
+                color="#444649"
+                border="2px solid #444649"
+                bgColor="#E31B6D"
+                hoverFontColor="#fff"
+                borderColor="#E31B6D"
+              />
+            </ButtonWrapper>
           </ContentWrapper>
         </ProjectContainer>
 
