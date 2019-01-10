@@ -29,13 +29,21 @@ const fullSize = { width: '96%' };
 
 class Projects extends Component {
   state = {
-    modal: false,
+    modalProofd: false,
+    modalCrytpoGym: false,
   };
 
   toggleProofd = () => {
     console.log('clicked');
     this.setState({
-      modal: !this.state.modal,
+      modalProofd: !this.state.modalProofd,
+    });
+  };
+
+  toggleCryptoGym = () => {
+    console.log('clicked');
+    this.setState({
+      modalCrytpoGym: !this.state.modalCrytpoGym,
     });
   };
 
@@ -55,7 +63,7 @@ class Projects extends Component {
               <Thumbnail
                 src={cryptoGym}
                 style={thumbSize}
-                onClick={this.openLightbox}
+                onClick={this.toggleCryptoGym}
                 alt="CryptoGym"
               />
               <Thumbnail
@@ -87,7 +95,11 @@ class Projects extends Component {
         </ProjectContainer>
 
         {/* Modal Proofd*/}
-        <Modal size="lg" isOpen={this.state.modal} toggle={this.toggleProofd}>
+        <Modal
+          size="lg"
+          isOpen={this.state.modalProofd}
+          toggle={this.toggleProofd}
+        >
           <ModalBody>
             <FullSize src={proofd} style={fullSize} alt="Proofd" />
           </ModalBody>
@@ -100,9 +112,8 @@ class Projects extends Component {
               <ModalDescription>
                 Proofd allows users to securely link a hash of any data, such as
                 important documents, to the Bitcoin blockchain. It was built
-                with React, Redux, Styled Components, Node.js, Express, and
-                PostgreSQL with Chainpoint, DocuSign, Auth0, and Stripe API
-                integration.
+                with React, Redux, Node.js, Express, and PostgreSQL with
+                Chainpoint, DocuSign, Auth0, and Stripe API integration.
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
@@ -113,6 +124,43 @@ class Projects extends Component {
             <Astyle
               onClick={this.toggleProofd}
               href="https://github.com/Lambda-School-Labs/ChainPointDocusign"
+              target="_blank"
+            >
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
+          </ModalHeader>
+        </Modal>
+
+        {/* Modal CryptoGym */}
+        <Modal
+          size="lg"
+          isOpen={this.state.modalCrytpoGym}
+          toggle={this.toggleCryptoGym}
+        >
+          <ModalBody>
+            <FullSize src={cryptoGym} style={fullSize} alt="Crypto Gym" />
+          </ModalBody>
+          <ModalHeader style={{ paddingTop: '0' }}>
+            <ModalTextWrapper>
+              <ModalTitle>CryptoGym</ModalTitle>
+              <ModalSubTitle>
+                An interactive training center for blockchain technology
+              </ModalSubTitle>
+              <ModalDescription>
+                CryptoGym teaches developers blockchain technology one rep at a
+                time. Users can select their preferred programming language and
+                work step by step through the code for the respective exercise.
+                It was built with React, Express, and Node.js.
+              </ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalHeader toggle={this.toggleCryptoGym}>
+            <Astyle href="https://cryptogym.netlify.com" target="_blank">
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{' '}
+            <Astyle
+              onClick={this.toggleCryptoGym}
+              href="https://github.com/helios-coop/cryptogym"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
