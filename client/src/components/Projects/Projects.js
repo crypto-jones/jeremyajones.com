@@ -6,6 +6,7 @@ import { Element } from 'react-scroll';
 import {
   ProjectContainer,
   ProjectHeader,
+  ProjectSubHeader,
   ThumbnailContainer,
   ContentWrapper,
   Thumbnail,
@@ -81,7 +82,10 @@ class Projects extends Component {
       <Element name="Projects">
         <ProjectContainer>
           <ContentWrapper>
-            <ProjectHeader>Projects</ProjectHeader>
+            <ProjectHeader>Portfolio</ProjectHeader>
+            <ProjectSubHeader>
+              Click on a project to learn more
+            </ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
                 src={proofd}

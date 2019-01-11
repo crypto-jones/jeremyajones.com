@@ -19,6 +19,10 @@ export const AboutHeader = styled.div`
   font-weight: 600;
   color: #444649;
   padding: 50px 0 30px 0;
+
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const AboutSubHeader = styled.div`
@@ -26,6 +30,10 @@ export const AboutSubHeader = styled.div`
   font-weight: 600;
   color: #c0c0c0;
   padding-top: 20px;
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const IconContainer = styled.div`

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ProjectContainer = styled.div`
   background: #f5f5f5;
   padding-bottom: 100px;
+  font-family: 'Arvo', serif;
 `;
 
 export const ContentWrapper = styled.div`
@@ -12,11 +13,26 @@ export const ContentWrapper = styled.div`
 
 export const ProjectHeader = styled.div`
   text-align: center;
-  font-family: 'Arvo', serif;
   font-size: 3rem;
   font-weight: 600;
   color: #444649;
   padding-top: 50px;
+
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+  }
+`;
+
+export const ProjectSubHeader = styled.div`
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #c0c0c0;
+  padding-top: 20px;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const ThumbnailContainer = styled.div`
