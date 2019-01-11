@@ -10,7 +10,10 @@ import {
   IconTextWrapper,
   IconText,
   IconHeader,
+  ProfilePic,
 } from './AboutStyles';
+
+import profileImage from '../../assets/jeremy.jpg';
 
 class About extends Component {
   state = {};
@@ -20,6 +23,7 @@ class About extends Component {
         <AboutContainer>
           <ContentWrapper>
             <AboutHeader>About</AboutHeader>
+            <ProfilePic src={profileImage} />
             <AboutSubHeader>I build apps that are</AboutSubHeader>
             <IconContainer>
               <IconTextWrapper>

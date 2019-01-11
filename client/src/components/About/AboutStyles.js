@@ -9,18 +9,19 @@ export const AboutContainer = styled.div`
 export const ContentWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const AboutHeader = styled.div`
-  text-align: center;
   font-size: 3rem;
   font-weight: 600;
   color: #444649;
-  padding-top: 50px;
+  padding: 50px 0 30px 0;
 `;
 
 export const AboutSubHeader = styled.div`
-  text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
   color: #c0c0c0;
@@ -84,4 +85,10 @@ export const Icon = styled.i`
   @media (max-width: 600px) {
     font-size: 4em;
   }
+`;
+
+export const ProfilePic = styled.img`
+  width: 200px
+  border-radius: 50%
+  border: 3px solid #444649;
 `;
