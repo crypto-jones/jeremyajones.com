@@ -6,7 +6,8 @@ import {
   HomeContainer,
   HeaderContainer,
   TextContainer,
-  Highlight,
+  NameText,
+  JobText,
 } from './HomeStyles';
 
 class Home extends Component {
@@ -39,8 +40,8 @@ class Home extends Component {
           <Particles />
           <HeaderContainer>
             <TextContainer>
-              <Highlight>Jeremy A. Jones</Highlight>
-              Full Stack Developer
+              <NameText>Jeremy A. Jones</NameText>
+              <JobText>Full Stack Developer</JobText>
             </TextContainer>
             <NavButton
               name="See My Work"

@@ -18,24 +18,40 @@ export const HeaderContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  font-size: 2.5rem;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
-  color: white;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @media (max-width: 600px) {
-    font-size: 1.8rem;
+    margin-bottom: 8px;
   }
 `;
 
-export const Highlight = styled.div`
-  font-size: 4rem;
+export const NameText = styled.div`
+  -webkit-font-smoothing: antialiased;
+  font-size: 4.5rem;
   padding-bottom: 5px;
   font-weight: 700;
   color: #e31b6d;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.2;
+
+  &:hover {
+    color: #04c2c9;
+  }
 
   @media (max-width: 600px) {
     font-size: 2.8rem;
+  }
+`;
+export const JobText = styled.div`
+  font-size: 3rem;
+  color: white;
+
+  &:hover {
+    color: #04c2c9;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
   }
 `;
