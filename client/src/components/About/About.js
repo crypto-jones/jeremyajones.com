@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
+
 import {
   AboutContainer,
   ContentWrapper,
@@ -43,7 +44,7 @@ class About extends Component {
               <IconTextWrapper>
                 <Icon className="fas fa-mobile-alt" />
                 <IconHeader>Responsive</IconHeader>
-                <IconText>Elegant & sleek designs for any device size</IconText>
+                <IconText>Sleek & elegant designs for any device size</IconText>
               </IconTextWrapper>
               <IconTextWrapper>
                 <Icon className="fas fa-lightbulb" />

@@ -48,6 +48,7 @@ export const Thumbnail = styled.img`
 
   &:hover {
     cursor: pointer;
+    transition: 0.4s;
     transform: scale(1.05);
   }
 `;
