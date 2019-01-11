@@ -86,10 +86,6 @@ export const Icon = styled.i`
   text-shadow: 3px 3px 10px #444649;
   font-size: 6em;
 
-  &:hover {
-    color: #e31b6d;
-  }
-
   @media (max-width: 600px) {
     font-size: 4em;
   }
@@ -100,9 +96,6 @@ export const ProfilePic = styled.img`
   border-radius: 50%
   border: 3px solid #444649;
 
-  &:hover {
-    border-color: #04c2c9;
-  }
 `;
 
 export const SocialContainer = styled.div`
