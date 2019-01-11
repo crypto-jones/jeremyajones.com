@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
   background: #f5f5f5;
+  padding-bottom: 100px;
 `;
 
 export const ContentWrapper = styled.div`
