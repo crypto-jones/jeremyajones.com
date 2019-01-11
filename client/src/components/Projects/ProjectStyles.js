@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
-  height: 100vh;
-
   background: #f5f5f5;
 `;
 
@@ -38,7 +36,6 @@ export const Thumbnail = styled.img`
 `;
 
 export const FullSize = styled.img`
-  margin: 15px;
   border: 5px solid black;
 `;
 
@@ -58,21 +55,24 @@ export const ModalTextWrapper = styled.div`
 
 export const ModalTitle = styled.h2`
   font-family: 'Arvo', serif;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #444;
 `;
 
 export const ModalSubTitle = styled.h4`
   font-family: 'Arvo', serif;
+  font-size: 1.2rem;
   color: #c0c0c0;
 `;
 
 export const ModalDescription = styled.p`
   font-family: 'Arvo', serif;
   color: #444;
+  font-size: 1.1rem;
 `;
 
-export const ButtonWrapper = styled.a`
+export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px 0;

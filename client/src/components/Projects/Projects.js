@@ -28,7 +28,7 @@ import reactMovies from '../../assets/05.jpg';
 import walletWatcher from '../../assets/06.jpg';
 
 const thumbSize = { width: '370px', height: '217px' };
-const fullSize = { width: '96%' };
+const fullSize = { width: '100%' };
 
 class Projects extends Component {
   state = {
@@ -120,32 +120,36 @@ class Projects extends Component {
                 alt="WalletWatcher"
               />
             </ThumbnailContainer>
-            <ButtonWrapper
-              href="https://www.thehackhive.com/profile/jeremyjones"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
-            >
-              <Button
-                name="Full Portfolio"
-                color="#444649"
-                border="2px solid #444649"
-                bgColor="#E31B6D"
-                hoverFontColor="#fff"
-                borderColor="#E31B6D"
-              />
+            <ButtonWrapper>
+              <a
+                href="https://www.thehackhive.com/profile/jeremyjones"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none' }}
+              >
+                <Button
+                  name="Full Portfolio"
+                  color="#444649"
+                  border="2px solid #444649"
+                  bgColor="#E31B6D"
+                  hoverFontColor="#fff"
+                  borderColor="#E31B6D"
+                />
+              </a>
             </ButtonWrapper>
           </ContentWrapper>
         </ProjectContainer>
 
         {/* Modal Proofd*/}
-        <Modal
-          size="lg"
-          isOpen={this.state.modalProofd}
-          toggle={this.toggleProofd}
-        >
+        <Modal isOpen={this.state.modalProofd} toggle={this.toggleProofd}>
           <ModalBody>
-            <FullSize src={proofd} style={fullSize} alt="Proofd" />
+            <a
+              href="https://proofd.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize src={proofd} style={fullSize} alt="Proofd" />
+            </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
@@ -171,17 +175,22 @@ class Projects extends Component {
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
+            <Astyle href="https://youtu.be/j7jHC1eFPY8" target="_blank">
+              <i className="fab fa-youtube fa-2x" />
+            </Astyle>
           </ModalHeader>
         </Modal>
 
         {/* Modal CryptoGym */}
-        <Modal
-          size="lg"
-          isOpen={this.state.modalCrytpoGym}
-          toggle={this.toggleCryptoGym}
-        >
+        <Modal isOpen={this.state.modalCrytpoGym} toggle={this.toggleCryptoGym}>
           <ModalBody>
-            <FullSize src={cryptoGym} style={fullSize} alt="Crypto Gym" />
+            <a
+              href="https://cryptogym.netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize src={cryptoGym} style={fullSize} alt="Crypto Gym" />
+            </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
@@ -211,17 +220,19 @@ class Projects extends Component {
         </Modal>
 
         {/* Modal Professor Jones Music */}
-        <Modal
-          size="lg"
-          isOpen={this.state.modalProfJones}
-          toggle={this.toggleProfJones}
-        >
+        <Modal isOpen={this.state.modalProfJones} toggle={this.toggleProfJones}>
           <ModalBody>
-            <FullSize
-              src={profJones}
-              style={fullSize}
-              alt="Professor Jones Music"
-            />
+            <a
+              href="https://www.professorjonesmusic.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize
+                src={profJones}
+                style={fullSize}
+                alt="Professor Jones Music"
+              />
+            </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
@@ -230,7 +241,7 @@ class Projects extends Component {
                 A modern website for a musical artist
               </ModalSubTitle>
               <ModalDescription>
-                ProfessorJonesMusic.com is a site I built to showcase my music
+                ProfessorJonesMusic.com is a site I created to showcase my music
                 as well as my visual art. It was built with React, Express, and
                 Node.js with YouTube, Bandsintown, and Stripe API integration.
               </ModalDescription>
@@ -250,25 +261,32 @@ class Projects extends Component {
         </Modal>
 
         {/* Modal BCAD */}
-        <Modal size="lg" isOpen={this.state.modalBCAD} toggle={this.toggleBCAD}>
+        <Modal isOpen={this.state.modalBCAD} toggle={this.toggleBCAD}>
           <ModalBody>
-            <FullSize
-              src={bcad}
-              style={fullSize}
-              alt="Blockchain Artifact Database"
-            />
+            <a
+              href="https://devpost.com/software/b-c-a-d-boock-chain-artifact-database"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize
+                src={bcad}
+                style={fullSize}
+                alt="Blockchain Artifact Database"
+              />
+            </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
-              <ModalTitle>BC/AD — Blockchain Artifact Database</ModalTitle>
+              <ModalTitle>BC/AD</ModalTitle>
               <ModalSubTitle>
-                A platform for authenticating artifacts on Ethereum
+                A blockchain solution for authenticating artifacts
               </ModalSubTitle>
               <ModalDescription>
-                BC/AD was an ETH San Francisco 2018 project. It's a system for
-                authenticating unique artifacts, antiques, and collectibles
-                verified by experts. It was built with React, Express, Node.js,
-                Web3.js, and Solidity with Twitter API integration.
+                Blockchain Artifact Database was an ETH San Francisco 2018
+                project. It's a system for authenticating unique artifacts,
+                antiquities, and collectibles verified by experts. It was built
+                with React, Express, Node.js, Web3.js, and Solidity with Twitter
+                API integration.
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
@@ -290,25 +308,30 @@ class Projects extends Component {
 
         {/* Modal React Movies */}
         <Modal
-          size="lg"
           isOpen={this.state.modalReactMovies}
           toggle={this.toggleReactMovies}
         >
           <ModalBody>
-            <FullSize src={reactMovies} style={fullSize} alt="React Movies" />
+            <a
+              href="https://react-movies-jeremy-jones.netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize src={reactMovies} style={fullSize} alt="React Movies" />
+            </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>React Movies</ModalTitle>
               <ModalSubTitle>
-                A UI-focused app that displays details & trailers of films
+                An app that displays details & trailers of films
               </ModalSubTitle>
               <ModalDescription>
-                React Movies allows users to search for in real-time any film
-                ever published to the Movie DB with blazing fast rendering. A
-                user can click on the movie card, watch the trailer and get more
-                details. This app was built with React with the Movie Database
-                API integration.
+                React Movies is a UI-focused app that allows users to search for
+                in real-time any film ever published to the Movie DB with
+                blazing fast rendering. A user can click on the movie card,
+                watch the trailer and get more details. This app was built with
+                React with the Movie Database API integration.
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
@@ -330,12 +353,21 @@ class Projects extends Component {
 
         {/* Modal WalletWatcher */}
         <Modal
-          size="lg"
           isOpen={this.state.modalWalletWatcher}
           toggle={this.toggleWalletWatcher}
         >
           <ModalBody>
-            <FullSize src={walletWatcher} style={fullSize} alt="React Movies" />
+            <a
+              href="https://walletwatcher.netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize
+                src={walletWatcher}
+                style={fullSize}
+                alt="React Movies"
+              />
+            </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
