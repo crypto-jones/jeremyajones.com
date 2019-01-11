@@ -11,6 +11,8 @@ import {
   IconText,
   IconHeader,
   ProfilePic,
+  SocialContainer,
+  Astyle,
 } from './AboutStyles';
 
 import profileImage from '../../assets/jeremy.jpg';
@@ -24,6 +26,11 @@ class About extends Component {
           <ContentWrapper>
             <AboutHeader>About</AboutHeader>
             <ProfilePic src={profileImage} />
+            {/* <SocialContainer>
+              <Astyle>
+                <i class="fab fa-github" />
+              </Astyle>
+            </SocialContainer> */}
             <AboutSubHeader>I build apps that are</AboutSubHeader>
             <IconContainer>
               <IconTextWrapper>

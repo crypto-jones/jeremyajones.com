@@ -91,4 +91,22 @@ export const ProfilePic = styled.img`
   width: 200px
   border-radius: 50%
   border: 3px solid #444649;
+
+  &:hover {
+    border-color: #04c2c9;
+  }
+`;
+
+export const SocialContainer = styled.div`
+  justify-content: center;
+`;
+
+export const Astyle = styled.a`
+  color: #708090;
+  padding: 0 15px;
+  border-radius: 10px;
+
+  &:hover {
+    color: #e31b6d;
+  }
 `;
