@@ -38,8 +38,9 @@ class About extends Component {
               name="View Resume"
               color="#444649"
               border="2px solid #444649"
-              bgColor="#fffdff"
-              borderColor="#fffdff"
+              hoverFontColor="#fffdff"
+              bgColor="#444649"
+              borderColor="#444649"
               onClick={this.togglePDF}
             />
             <AboutSubHeader>I build apps that are</AboutSubHeader>

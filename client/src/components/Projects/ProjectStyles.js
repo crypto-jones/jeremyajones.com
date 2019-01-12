@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
-  background: #8b8989;
-  // background: #c0c0c0;
+  background: #444649;
   padding-bottom: 100px;
   font-family: 'Arvo', serif;
 `;
@@ -16,7 +15,7 @@ export const ProjectHeader = styled.div`
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
-  color: #fffdff;
+  color: #fffff0;
   padding-top: 50px;
 
   @media (max-width: 600px) {
@@ -27,7 +26,7 @@ export const ProjectHeader = styled.div`
 export const ProjectSubHeader = styled.div`
   font-size: 1.8rem;
   font-weight: 600;
-  color: #444649;
+  color: #c0c0c0;
   padding-top: 20px;
   text-align: center;
 
@@ -59,7 +58,6 @@ export const FullSize = styled.img`
 `;
 
 export const Astyle = styled.a`
-  // color: #708090;
   color: #444649;
   padding: 0 15px;
   border-radius: 10px;
