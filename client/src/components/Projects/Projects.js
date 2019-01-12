@@ -382,9 +382,9 @@ class Projects extends Component {
               <ModalDescription>
                 WalletWatcher was a Lambda School Hackathon 2018 project that
                 was awarded a third place prize and "most likely to become a
-                startup." It allows users to monitor any ETH address and receive
-                SMS notifications. It was built with React, Express, Node.js,
-                and MongoDB with Twilio and Etherscan API integration.
+                startup." It allows users to monitor any Ethereum-based address
+                and receive SMS notifications. It was built with React, Express,
+                Node.js, and MongoDB with Twilio and Etherscan API integration.
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
