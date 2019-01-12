@@ -97,17 +97,3 @@ export const ProfilePic = styled.img`
   border: 3px solid #444649;
 
 `;
-
-export const SocialContainer = styled.div`
-  justify-content: center;
-`;
-
-export const Astyle = styled.a`
-  color: #708090;
-  padding: 0 15px;
-  border-radius: 10px;
-
-  &:hover {
-    color: #e31b6d;
-  }
-`;

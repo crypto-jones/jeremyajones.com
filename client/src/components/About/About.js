@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
+import PDF from '../PDF/PDF';
 
+import Button from '../Button/Button';
 import {
   AboutContainer,
   ContentWrapper,
@@ -12,14 +14,19 @@ import {
   IconText,
   IconHeader,
   ProfilePic,
-  SocialContainer,
-  Astyle,
 } from './AboutStyles';
 
 import profileImage from '../../assets/jeremy.jpg';
 
 class About extends Component {
-  state = {};
+  state = {
+    modal: false,
+  };
+
+  togglePDF = () => {
+    this.setState({ modal: !this.state.modal });
+  };
+
   render() {
     return (
       <Element name="About">
@@ -27,11 +34,14 @@ class About extends Component {
           <ContentWrapper>
             <AboutHeader>About</AboutHeader>
             <ProfilePic src={profileImage} />
-            {/* <SocialContainer>
-              <Astyle>
-                <i class="fab fa-github" />
-              </Astyle>
-            </SocialContainer> */}
+            <Button
+              name="View Resume"
+              color="#444649"
+              border="2px solid #444649"
+              bgColor="#fffdff"
+              borderColor="#fffdff"
+              onClick={this.togglePDF}
+            />
             <AboutSubHeader>I build apps that are</AboutSubHeader>
             <IconContainer>
               <IconTextWrapper>
@@ -63,6 +73,7 @@ class About extends Component {
               </IconTextWrapper>
             </IconContainer>
           </ContentWrapper>
+          <PDF toggle={this.togglePDF} isOpen={this.state.modal} />
         </AboutContainer>
       </Element>
     );

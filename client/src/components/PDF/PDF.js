@@ -1,31 +1,18 @@
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import { PDFObject } from 'react-pdfobject';
+import { Modal } from 'reactstrap';
+import resume from '../../assets/jeremyjones-resume2019.pdf';
 
-// Create styles
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4',
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
-  },
-});
+class PDFModal extends React.Component {
+  render() {
+    const { toggle, isOpen } = this.props;
 
-// Create Document Component
-const Resume = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
-      </View>
-    </Page>
-  </Document>
-);
+    return (
+      <Modal isOpen={isOpen} toggle={toggle} size="lg">
+        <PDFObject url={resume} height="1080px" />
+      </Modal>
+    );
+  }
+}
 
-export default Resume;
+export default PDFModal;
