@@ -10,11 +10,12 @@ const ParticleEffects = () => {
             value: 80,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 1000,
             },
           },
           color: {
-            value: ['#E31B6D', '#00d8ff'],
+            // value: ['#E31B6D', '#00d8ff'],
+            value: '#9d967c',
           },
           shape: {
             type: 'circle',

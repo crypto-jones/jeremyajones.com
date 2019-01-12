@@ -45,10 +45,10 @@ class Home extends Component {
             </TextContainer>
             <NavButton
               name="See My Work"
-              color="#fff"
-              border="2px solid #fff"
-              bgColor="#E31B6D"
-              borderColor="#E31B6D"
+              color="#fffff0"
+              border="2px solid #fffff0"
+              bgColor="#9d967c"
+              borderColor="#9d967c"
               onClick={this.smoothScroll}
             />
           </HeaderContainer>

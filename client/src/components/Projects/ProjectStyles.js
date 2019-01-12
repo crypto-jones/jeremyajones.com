@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
-  background: #f5f5f5;
+  background: #8b8989;
+  // background: #c0c0c0;
   padding-bottom: 100px;
   font-family: 'Arvo', serif;
 `;
@@ -15,7 +16,7 @@ export const ProjectHeader = styled.div`
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
-  color: #444649;
+  color: #fffdff;
   padding-top: 50px;
 
   @media (max-width: 600px) {
@@ -26,7 +27,7 @@ export const ProjectHeader = styled.div`
 export const ProjectSubHeader = styled.div`
   font-size: 1.8rem;
   font-weight: 600;
-  color: #c0c0c0;
+  color: #444649;
   padding-top: 20px;
   text-align: center;
 
@@ -58,12 +59,13 @@ export const FullSize = styled.img`
 `;
 
 export const Astyle = styled.a`
-  color: #708090;
+  // color: #708090;
+  color: #444649;
   padding: 0 15px;
   border-radius: 10px;
 
   &:hover {
-    color: #e31b6d;
+    color: #9d967c;
   }
 `;
 
@@ -75,7 +77,7 @@ export const ModalTitle = styled.h2`
   font-family: 'Arvo', serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #444;
+  color: #444649;
 `;
 
 export const ModalSubTitle = styled.h4`
@@ -86,7 +88,7 @@ export const ModalSubTitle = styled.h4`
 
 export const ModalDescription = styled.p`
   font-family: 'Arvo', serif;
-  color: #444;
+  color: #444649;
   font-size: 1.1rem;
 `;
 

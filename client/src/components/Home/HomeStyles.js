@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
-  background: #171e26;
+  background: #182327;
   height: 100vh;
 `;
 
@@ -32,12 +32,8 @@ export const NameText = styled.div`
   font-size: 4.5rem;
   padding-bottom: 5px;
   font-weight: 700;
-  color: #e31b6d;
+  color: #9d967c;
   line-height: 1.2;
-
-  &:hover {
-    color: #04c2c9;
-  }
 
   @media (max-width: 600px) {
     font-size: 2.8rem;
@@ -45,11 +41,7 @@ export const NameText = styled.div`
 `;
 export const JobText = styled.div`
   font-size: 3rem;
-  color: white;
-
-  &:hover {
-    color: #04c2c9;
-  }
+  color: #fffff0;
 
   @media (max-width: 600px) {
     font-size: 1.8rem;
