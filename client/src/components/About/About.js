@@ -13,7 +13,10 @@ import {
   IconTextWrapper,
   IconText,
   IconHeader,
+  BioWrapper,
+  BioTextWrapper,
   ProfilePic,
+  BioText,
 } from './AboutStyles';
 
 import profileImage from '../../assets/jeremy.jpg';
@@ -33,16 +36,25 @@ class About extends Component {
         <AboutContainer>
           <ContentWrapper>
             <AboutHeader>About</AboutHeader>
-            <ProfilePic src={profileImage} />
-            <Button
-              name="View Resume"
-              color="#444649"
-              border="2px solid #444649"
-              hoverFontColor="#fffdff"
-              bgColor="#444649"
-              borderColor="#444649"
-              onClick={this.togglePDF}
-            />
+            <BioWrapper>
+              <ProfilePic src={profileImage} />
+              <BioTextWrapper>
+                <BioText>
+                  Hello. I'm Jeremy, a software developer in San Francisco. I
+                  thrive on being challenged and finding unique solutions to
+                  complex problems.
+                </BioText>
+                <Button
+                  name="View Resume"
+                  color="#444649"
+                  border="2px solid #444649"
+                  hoverFontColor="#fffdff"
+                  bgColor="#444649"
+                  borderColor="#444649"
+                  onClick={this.togglePDF}
+                />
+              </BioTextWrapper>
+            </BioWrapper>
             <AboutSubHeader>I build apps that are</AboutSubHeader>
             <IconContainer>
               <IconTextWrapper>
