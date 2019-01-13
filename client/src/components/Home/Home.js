@@ -20,7 +20,6 @@ class Home extends Component {
   }
 
   smoothScroll() {
-    console.log('btn clicked');
     scroller.scrollTo('About', {
       duration: 500,
       delay: 1,
