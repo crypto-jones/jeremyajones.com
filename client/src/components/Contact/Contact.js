@@ -7,6 +7,7 @@ import {
   ContactHeader,
   ContactSubHeader,
   ContactForm,
+  ButtonWrapper,
 } from './ContactStyles';
 
 import Button from '../Button/Button';
@@ -105,17 +106,19 @@ class Contact extends Component {
                   onChange={this.handleChange}
                 />
               </FormGroup>
-              <Button
-                name="Submit"
-                color="#c0c0c0"
-                border="2px solid #c0c0c0"
-                bgColor="#9d967c"
-                hoverFontColor="#182327"
-                borderColor="#9d967c"
-                onClick={this.handleSubmit}
-              />
             </Form>
           </ContactForm>
+          <ButtonWrapper>
+            <Button
+              name="Send Message"
+              color="#c0c0c0"
+              border="2px solid #c0c0c0"
+              bgColor="#9d967c"
+              hoverFontColor="#182327"
+              borderColor="#9d967c"
+              onClick={this.handleSubmit}
+            />
+          </ButtonWrapper>
         </ContentWrapper>
       </ContactContainer>
     );

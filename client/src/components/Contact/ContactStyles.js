@@ -37,6 +37,32 @@ export const ContactSubHeader = styled.div`
 
 export const ContactForm = styled.div`
   max-width: 600px;
-  margin: 40px auto;
+  margin: 40px auto 0;
   padding: 0 20px;
+`;
+
+export const FormWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+`;
+
+export const SocialWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
 `;
