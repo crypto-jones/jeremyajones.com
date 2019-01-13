@@ -68,9 +68,14 @@ export const SocialWrapper = styled.div`
 
 export const Astyle = styled.a`
   color: #9d967c;
+  font-size: 2.8em;
 
   &:hover {
     color: #c0c0c0;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2.2rem;
   }
 `;
 

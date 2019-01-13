@@ -128,7 +128,7 @@ class Contact extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-linkedin fa-3x" />
+              <i className="fab fa-linkedin" />
             </Astyle>
 
             <Astyle
@@ -136,7 +136,7 @@ class Contact extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github fa-3x" />
+              <i className="fab fa-github" />
             </Astyle>
 
             <Astyle
@@ -144,14 +144,14 @@ class Contact extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-medium fa-3x" />
+              <i className="fab fa-medium" />
             </Astyle>
             <Astyle
               href={`mailto:${process.env.REACT_APP_EMAIL}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fas fa-envelope fa-3x" />
+              <i className="fas fa-envelope" />
             </Astyle>
           </SocialWrapper>
           <CopyrightText>Jeremy A. Jones ©2019</CopyrightText>
