@@ -21,30 +21,52 @@ class Contact extends Component {
   state = { name: '', email: '', message: '' };
 
   handleSubmit = e => {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
-    })
-      .then(() =>
-        alert(
-          `Hey! Thanks for contacting me. I'll get back to you soon as I can.`
-        )
-      )
-      .catch(error =>
-        alert(
-          `Oops! Something went wrong. Contact me at ${
-            process.env.REACT_APP_EMAIL
-          }.`
-        )
-      );
-
     e.preventDefault();
+
+    const { name, email, message } = this.state;
+    const valid =
+      name.length > 0 &&
+      email.length > 0 &&
+      email.includes('@') &&
+      email.includes('.') &&
+      message.length > 0;
+
+    if (valid) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...this.state }),
+      })
+        .then(() =>
+          alert(
+            `Hey! Thanks for contacting me. I'll get back to you soon as I can.`
+          )
+        )
+        .catch(error =>
+          alert(
+            `Oops! Something went wrong. Contact me at ${
+              process.env.REACT_APP_EMAIL
+            }.`
+          )
+        );
+
+      this.setState({ name: '', email: '', message: '' });
+    } else if (name.length <= 0) {
+      alert('Please enter your name.');
+    } else if (email.length <= 0) {
+      alert('Please enter your email address.');
+    } else if (!email.includes('@') || !email.includes('.')) {
+      alert('Please enter a valid email address.');
+    } else if (message.length <= 0) {
+      alert('Please enter your message.');
+    }
   };
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
+    const { name, email, message } = this.state;
+
     return (
       <ContactContainer>
         <ContentWrapper>
@@ -56,6 +78,7 @@ class Contact extends Component {
                 <Input
                   type="text"
                   name="name"
+                  value={name}
                   bsSize="lg"
                   placeholder="Name"
                   onChange={this.handleChange}
@@ -65,6 +88,7 @@ class Contact extends Component {
                 <Input
                   type="email"
                   name="email"
+                  value={email}
                   bsSize="lg"
                   placeholder="Email"
                   onChange={this.handleChange}
@@ -74,6 +98,7 @@ class Contact extends Component {
                 <Input
                   type="textarea"
                   name="message"
+                  value={message}
                   placeholder="Message"
                   bsSize="lg"
                   style={{ height: '200px' }}
