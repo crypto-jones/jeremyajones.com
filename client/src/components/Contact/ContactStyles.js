@@ -34,3 +34,9 @@ export const ContactSubHeader = styled.div`
     font-size: 1.4rem;
   }
 `;
+
+export const ContactForm = styled.div`
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+`;
