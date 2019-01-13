@@ -35,7 +35,7 @@ class Contact extends Component {
               <FormGroup>
                 <Input
                   type="textarea"
-                  name="text"
+                  name="message"
                   placeholder="Message"
                   size="lg"
                   style={{ height: '200px' }}
