@@ -45,8 +45,8 @@ class Home extends Component {
             </TextContainer>
             <NavButton
               name="See My Work"
-              color="#fffff0"
-              border="2px solid #fffff0"
+              color="#c0c0c0"
+              border="2px solid #c0c0c0"
               bgColor="#9d967c"
               hoverFontColor="#182327"
               borderColor="#9d967c"

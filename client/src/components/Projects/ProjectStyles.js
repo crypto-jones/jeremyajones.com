@@ -15,7 +15,7 @@ export const ProjectHeader = styled.div`
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
-  color: #fffff0;
+  color: #fffdff;
   padding-top: 50px;
 
   @media (max-width: 600px) {

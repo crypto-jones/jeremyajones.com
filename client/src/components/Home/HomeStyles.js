@@ -41,7 +41,7 @@ export const NameText = styled.div`
 `;
 export const JobText = styled.div`
   font-size: 3rem;
-  color: #fffff0;
+  color: #c0c0c0;
 
   @media (max-width: 600px) {
     font-size: 1.8rem;

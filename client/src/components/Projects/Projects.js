@@ -133,11 +133,11 @@ class Projects extends Component {
               >
                 <Button
                   name="Full Portfolio"
-                  color="#fffff0"
-                  border="2px solid #fffff0"
-                  bgColor="#fffff0"
+                  color="#fffdff"
+                  border="2px solid #fffdff"
+                  bgColor="#fffdff"
                   hoverFontColor="#444649"
-                  borderColor="#fffff0"
+                  borderColor="#fffdff"
                 />
               </a>
             </ButtonWrapper>
@@ -174,7 +174,7 @@ class Projects extends Component {
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
             <Astyle
-              href="https://github.com/Lambda-School-Labs/ChainPointDocusign"
+              href="https://github.com/Lambda-School-Labs/proofd.app"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
