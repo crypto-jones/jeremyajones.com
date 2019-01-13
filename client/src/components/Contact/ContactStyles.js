@@ -83,4 +83,8 @@ export const CopyrightText = styled.p`
   text-align: center;
   padding-top: 30px;
   color: #c0c0c0;
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
 `;
