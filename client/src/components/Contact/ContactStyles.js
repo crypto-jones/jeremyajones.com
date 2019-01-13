@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   background: #182327;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   font-family: 'Arvo', serif;
 `;
 
@@ -63,6 +63,19 @@ export const SocialWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   max-width: 600px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 70px auto 40px;
+`;
+
+export const Astyle = styled.a`
+  color: #9d967c;
+
+  &:hover {
+    color: #c0c0c0;
+  }
+`;
+
+export const CopyrightText = styled.p`
+  text-align: center;
+  padding-top: 30px;
+  color: #c0c0c0;
 `;

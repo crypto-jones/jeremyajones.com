@@ -8,6 +8,9 @@ import {
   ContactSubHeader,
   ContactForm,
   ButtonWrapper,
+  SocialWrapper,
+  Astyle,
+  CopyrightText,
 } from './ContactStyles';
 
 import Button from '../Button/Button';
@@ -119,6 +122,39 @@ class Contact extends Component {
               onClick={this.handleSubmit}
             />
           </ButtonWrapper>
+          <SocialWrapper>
+            <Astyle
+              href="https://www.linkedin.com/in/jeremyalexanderjones/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin fa-3x" />
+            </Astyle>
+
+            <Astyle
+              href="https://github.com/crypto-jones"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github fa-3x" />
+            </Astyle>
+
+            <Astyle
+              href="https://medium.com/@jeremy.a.jones"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-medium fa-3x" />
+            </Astyle>
+            <Astyle
+              href={`mailto:${process.env.REACT_APP_EMAIL}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-envelope fa-3x" />
+            </Astyle>
+          </SocialWrapper>
+          <CopyrightText>Jeremy A. Jones ©2019</CopyrightText>
         </ContentWrapper>
       </ContactContainer>
     );
