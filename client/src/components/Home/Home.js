@@ -12,7 +12,7 @@ import {
 
 class Home extends Component {
   smoothScroll() {
-    scroller.scrollTo('NavBar', {
+    scroller.scrollTo('About', {
       duration: 500,
       delay: 1,
       smooth: true,
