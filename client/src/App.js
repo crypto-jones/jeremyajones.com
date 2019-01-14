@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
@@ -10,15 +10,15 @@ import Sticky from 'react-sticky-el';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Fragment>
         <Home />
-        <Sticky>
+        <Sticky className="Sticky">
           <NavBar />
         </Sticky>
         <About />
         <Projects />
         <Contact />
-      </div>
+      </Fragment>
     );
   }
 }

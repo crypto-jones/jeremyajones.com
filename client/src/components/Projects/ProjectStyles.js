@@ -49,6 +49,7 @@ export const Thumbnail = styled.img`
     cursor: pointer;
     transition: 0.4s;
     transform: scale(1.05);
+    z-index: 0;
   }
 `;
 
