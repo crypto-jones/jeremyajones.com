@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ModalHeader } from 'reactstrap';
 
 export const ProjectContainer = styled.div`
   background: #444649;
@@ -90,6 +91,11 @@ export const ModalDescription = styled.p`
   font-family: 'Arvo', serif;
   color: #444649;
   font-size: 1.1rem;
+`;
+
+export const ModalFooter = styled(ModalHeader)`
+  display: flex;
+  align-items: center;
 `;
 
 export const ButtonWrapper = styled.div`

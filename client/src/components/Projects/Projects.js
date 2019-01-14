@@ -17,6 +17,7 @@ import {
   ModalSubTitle,
   ModalDescription,
   ButtonWrapper,
+  ModalFooter,
 } from './ProjectStyles';
 
 import Button from '../Button/Button';
@@ -169,7 +170,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalHeader toggle={this.toggleProofd}>
+          <ModalFooter toggle={this.toggleProofd}>
             <Astyle href="https://proofd.app" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
@@ -182,7 +183,7 @@ class Projects extends Component {
             <Astyle href="https://youtu.be/j7jHC1eFPY8" target="_blank">
               <i className="fab fa-youtube fa-2x" />
             </Astyle>
-          </ModalHeader>
+          </ModalFooter>
         </Modal>
 
         {/* Modal CryptoGym */}
@@ -210,7 +211,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalHeader toggle={this.toggleCryptoGym}>
+          <ModalFooter toggle={this.toggleCryptoGym}>
             <Astyle href="https://cryptogym.netlify.com" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
@@ -220,7 +221,7 @@ class Projects extends Component {
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-          </ModalHeader>
+          </ModalFooter>
         </Modal>
 
         {/* Modal Professor Jones Music */}
@@ -251,7 +252,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalHeader toggle={this.toggleProfJones}>
+          <ModalFooter toggle={this.toggleProfJones}>
             <Astyle href="https://www.professorjonesmusic.com" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
@@ -261,7 +262,7 @@ class Projects extends Component {
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-          </ModalHeader>
+          </ModalFooter>
         </Modal>
 
         {/* Modal BCAD */}
@@ -294,7 +295,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalHeader toggle={this.toggleBCAD}>
+          <ModalFooter toggle={this.toggleBCAD}>
             <Astyle
               href="https://devpost.com/software/b-c-a-d-boock-chain-artifact-database"
               target="_blank"
@@ -307,7 +308,7 @@ class Projects extends Component {
             <Astyle href="https://youtu.be/Vkq6gAvUT5M" target="_blank">
               <i className="fab fa-youtube fa-2x" />
             </Astyle>
-          </ModalHeader>
+          </ModalFooter>
         </Modal>
 
         {/* Modal React Movies */}
@@ -339,7 +340,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalHeader toggle={this.toggleReactMovies}>
+          <ModalFooter toggle={this.toggleReactMovies}>
             <Astyle
               href="https://react-movies-jeremy-jones.netlify.com"
               target="_blank"
@@ -352,7 +353,7 @@ class Projects extends Component {
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-          </ModalHeader>
+          </ModalFooter>
         </Modal>
 
         {/* Modal WalletWatcher */}
@@ -388,7 +389,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalHeader toggle={this.toggleWalletWatcher}>
+          <ModalFooter toggle={this.toggleWalletWatcher}>
             <Astyle href="https://walletwatcher.netlify.com" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
@@ -404,7 +405,7 @@ class Projects extends Component {
             >
               <i className="fab fa-youtube fa-2x" />
             </Astyle>
-          </ModalHeader>
+          </ModalFooter>
         </Modal>
       </Element>
     );
