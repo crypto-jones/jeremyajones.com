@@ -95,7 +95,7 @@ export const BioWrapper = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     flex-direction: column;
   }
 `;
@@ -114,7 +114,7 @@ export const BioTextWrapper = styled.div`
   margin: 0 20px;
   max-width: 550px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     margin: 0;
     align-items: center;
   }
