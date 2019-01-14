@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const CustomButton = styled.div`
-  width: 180px;
+  // width: 180px;
+  width: ${props => props.width};
   height: 45px;
   display: flex;
   justify-content: center;
@@ -10,7 +11,8 @@ export const CustomButton = styled.div`
   border: ${props => props.border};
   margin: 10px;
   padding: 10px;
-  font-size: 1.2rem;
+  // font-size: 1.2rem;
+  font-size: ${props => props.fontSize};
   font-family: 'Arvo', serif;
 
   &:hover {

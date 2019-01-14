@@ -121,6 +121,8 @@ class Contact extends Component {
                 bgColor="#9d967c"
                 hoverFontColor="#182327"
                 borderColor="#9d967c"
+                width="180px"
+                fontSize="1.2rem"
                 onClick={this.handleSubmit}
               />
             </ButtonWrapper>

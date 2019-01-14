@@ -139,6 +139,8 @@ class Projects extends Component {
                   bgColor="#c0c0c0"
                   hoverFontColor="#444649"
                   borderColor="#c0c0c0"
+                  width="180px"
+                  fontSize="1.2rem"
                 />
               </a>
             </ButtonWrapper>

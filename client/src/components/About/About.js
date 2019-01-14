@@ -51,6 +51,8 @@ class About extends Component {
                   hoverFontColor="#fffdff"
                   bgColor="#444649"
                   borderColor="#444649"
+                  width="180px"
+                  fontSize="1.2rem"
                   onClick={this.togglePDF}
                 />
               </BioTextWrapper>

@@ -9,6 +9,8 @@ const NavButton = props => {
   let hoverFontColor = props.hoverFontColor;
   let borderColor = props.borderColor;
   let onClick = props.onClick;
+  let fontSize = props.fontSize;
+  let width = props.width;
 
   return (
     <CustomButton
@@ -18,6 +20,8 @@ const NavButton = props => {
       hoverFontColor={hoverFontColor}
       borderColor={borderColor}
       onClick={onClick}
+      width={width}
+      fontSize={fontSize}
     >
       {btnName}
     </CustomButton>

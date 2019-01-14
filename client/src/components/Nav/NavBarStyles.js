@@ -27,8 +27,7 @@ export const NavLinkWrapper = styled.div`
 
 export const NavLink = styled.div`
   color: #9d967c;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
 
   &:hover {
     cursor: pointer;
@@ -47,7 +46,7 @@ export const Hamburger = styled.div`
 
   &:hover {
     cursor: pointer;
-    color: #c0c0c0;
+    color: #fffdff;
   }
 `;
 
