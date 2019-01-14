@@ -18,6 +18,8 @@ export const AboutHeader = styled.div`
   font-size: 3rem;
   font-weight: 600;
   color: #444649;
+  opacity: 0.9;
+
   padding: 0 0 40px 0;
 
   @media (max-width: 600px) {
@@ -86,7 +88,7 @@ export const IconText = styled.div`
 export const Icon = styled.i`
   color: #444649;
   padding: 5px 80px;
-  text-shadow: 3px 3px 10px #444649;
+  opacity: 0.9;
   font-size: 5em;
 
   @media (max-width: 600px) {

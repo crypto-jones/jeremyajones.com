@@ -17,6 +17,7 @@ export const ProjectHeader = styled.div`
   font-size: 3rem;
   font-weight: 600;
   color: #fffdff;
+  opacity: 0.9;
 
   @media (max-width: 600px) {
     font-size: 2.5rem;
