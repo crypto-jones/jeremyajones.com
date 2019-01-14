@@ -1,20 +1,54 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavBarContainer, NavLink, NavLinkWrapper } from './NavBarStyles';
-import { Element } from 'react-scroll';
+import { Element, scroller } from 'react-scroll';
 
-const NavBar = () => {
-  return (
-    <Element name="NavBar">
-      <NavBarContainer>
-        <NavLinkWrapper>
-          <NavLink>HOME</NavLink>
-          <NavLink>ABOUT</NavLink>
-          <NavLink>PORTFOLIO</NavLink>
-          <NavLink>CONTACT</NavLink>
-        </NavLinkWrapper>
-      </NavBarContainer>
-    </Element>
-  );
-};
+class NavBar extends Component {
+  smoothScrollHome() {
+    scroller.scrollTo('Home', {
+      duration: 500,
+      delay: 1,
+      smooth: true,
+    });
+  }
+
+  smoothScrollAbout() {
+    scroller.scrollTo('About', {
+      duration: 500,
+      delay: 1,
+      smooth: true,
+    });
+  }
+
+  smoothScrollProjects() {
+    scroller.scrollTo('Projects', {
+      duration: 500,
+      delay: 1,
+      smooth: true,
+    });
+  }
+
+  smoothScrollContact() {
+    scroller.scrollTo('Contact', {
+      duration: 500,
+      delay: 1,
+      smooth: true,
+    });
+  }
+
+  render() {
+    return (
+      <Element name="NavBar">
+        <NavBarContainer>
+          <NavLinkWrapper>
+            <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
+            <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
+            <NavLink onClick={this.smoothScrollProjects}>PORTFOLIO</NavLink>
+            <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
+          </NavLinkWrapper>
+        </NavBarContainer>
+      </Element>
+    );
+  }
+}
 
 export default NavBar;

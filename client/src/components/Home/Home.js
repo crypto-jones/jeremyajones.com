@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Events, scrollSpy, scroller } from 'react-scroll';
+import { Element, scroller } from 'react-scroll';
 import NavButton from '../Button/Button';
 import Particles from '../Particles/Particles';
 import {
@@ -11,13 +11,11 @@ import {
 } from './HomeStyles';
 
 class Home extends Component {
-  componentDidMount() {
-    Events.scrollEvent.register('begin', function(to, element) {});
-
-    Events.scrollEvent.register('end', function(to, element) {});
-
-    scrollSpy.update();
-  }
+  // componentDidMount() {
+  //   Events.scrollEvent.register('begin', function(to, element) {});
+  //   Events.scrollEvent.register('end', function(to, element) {});
+  //   scrollSpy.update();
+  // }
 
   smoothScroll() {
     scroller.scrollTo('NavBar', {
@@ -27,14 +25,14 @@ class Home extends Component {
     });
   }
 
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
+  // componentWillUnmount() {
+  //   Events.scrollEvent.remove('begin');
+  //   Events.scrollEvent.remove('end');
+  // }
 
   render() {
     return (
-      <div>
+      <Element name="Home">
         <HomeContainer>
           <Particles />
           <HeaderContainer>
@@ -53,7 +51,7 @@ class Home extends Component {
             />
           </HeaderContainer>
         </HomeContainer>
-      </div>
+      </Element>
     );
   }
 }

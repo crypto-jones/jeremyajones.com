@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Input } from 'reactstrap';
+import { Element } from 'react-scroll';
 
 import {
   ContactContainer,
@@ -72,91 +73,93 @@ class Contact extends Component {
     const { name, email, message } = this.state;
 
     return (
-      <ContactContainer>
-        <ContentWrapper>
-          <ContactHeader>Contact</ContactHeader>
-          <ContactSubHeader>Want to work together?</ContactSubHeader>
-          <ContactForm>
-            <Form onSubmit={this.handleSubmit}>
-              <FormGroup>
-                <Input
-                  type="text"
-                  name="name"
-                  value={name}
-                  bsSize="lg"
-                  placeholder="Name"
-                  onChange={this.handleChange}
-                />
-              </FormGroup>
-              <FormGroup>
-                <Input
-                  type="email"
-                  name="email"
-                  value={email}
-                  bsSize="lg"
-                  placeholder="Email"
-                  onChange={this.handleChange}
-                />
-              </FormGroup>
-              <FormGroup>
-                <Input
-                  type="textarea"
-                  name="message"
-                  value={message}
-                  placeholder="Message"
-                  bsSize="lg"
-                  style={{ height: '200px' }}
-                  onChange={this.handleChange}
-                />
-              </FormGroup>
-            </Form>
-          </ContactForm>
-          <ButtonWrapper>
-            <Button
-              name="Send Message"
-              color="#c0c0c0"
-              border="2px solid #c0c0c0"
-              bgColor="#9d967c"
-              hoverFontColor="#182327"
-              borderColor="#9d967c"
-              onClick={this.handleSubmit}
-            />
-          </ButtonWrapper>
-          <SocialWrapper>
-            <Astyle
-              href="https://www.linkedin.com/in/jeremyalexanderjones/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin" />
-            </Astyle>
+      <Element name="Contact">
+        <ContactContainer>
+          <ContentWrapper>
+            <ContactHeader>Contact</ContactHeader>
+            <ContactSubHeader>Want to work together?</ContactSubHeader>
+            <ContactForm>
+              <Form onSubmit={this.handleSubmit}>
+                <FormGroup>
+                  <Input
+                    type="text"
+                    name="name"
+                    value={name}
+                    bsSize="lg"
+                    placeholder="Name"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+                <FormGroup>
+                  <Input
+                    type="email"
+                    name="email"
+                    value={email}
+                    bsSize="lg"
+                    placeholder="Email"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+                <FormGroup>
+                  <Input
+                    type="textarea"
+                    name="message"
+                    value={message}
+                    placeholder="Message"
+                    bsSize="lg"
+                    style={{ height: '200px' }}
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+              </Form>
+            </ContactForm>
+            <ButtonWrapper>
+              <Button
+                name="Send Message"
+                color="#c0c0c0"
+                border="2px solid #c0c0c0"
+                bgColor="#9d967c"
+                hoverFontColor="#182327"
+                borderColor="#9d967c"
+                onClick={this.handleSubmit}
+              />
+            </ButtonWrapper>
+            <SocialWrapper>
+              <Astyle
+                href="https://www.linkedin.com/in/jeremyalexanderjones/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin" />
+              </Astyle>
 
-            <Astyle
-              href="https://github.com/crypto-jones"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github" />
-            </Astyle>
+              <Astyle
+                href="https://github.com/crypto-jones"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github" />
+              </Astyle>
 
-            <Astyle
-              href="https://medium.com/@jeremy.a.jones"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-medium" />
-            </Astyle>
-            <Astyle
-              href={`mailto:${process.env.REACT_APP_EMAIL}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-envelope" />
-            </Astyle>
-          </SocialWrapper>
-          <CopyrightText>Jeremy A. Jones ©2019</CopyrightText>
-        </ContentWrapper>
-      </ContactContainer>
+              <Astyle
+                href="https://medium.com/@jeremy.a.jones"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-medium" />
+              </Astyle>
+              <Astyle
+                href={`mailto:${process.env.REACT_APP_EMAIL}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-envelope" />
+              </Astyle>
+            </SocialWrapper>
+            <CopyrightText>Jeremy A. Jones ©2019</CopyrightText>
+          </ContentWrapper>
+        </ContactContainer>
+      </Element>
     );
   }
 }
