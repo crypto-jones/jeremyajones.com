@@ -15,7 +15,7 @@ export const ContactHeader = styled.div`
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
-  color: #9d967c
+  color: #9d967c;
   padding-top: 50px;
 
   @media (max-width: 600px) {
