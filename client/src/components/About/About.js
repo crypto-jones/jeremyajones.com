@@ -42,7 +42,7 @@ class About extends Component {
                 <BioText>
                   Hello. I'm Jeremy, a software developer in San Francisco. I
                   thrive on being challenged and finding unique solutions to
-                  complex problems, and I love turning ideas into reality.
+                  complex problems. I love turning ideas into reality.
                 </BioText>
                 <Button
                   name="View Resume"

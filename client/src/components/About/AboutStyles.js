@@ -49,7 +49,7 @@ export const IconContainer = styled.div`
 `;
 
 export const IconTextWrapper = styled.div`
-  max-width: 250px;
+  max-width: 220px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -76,6 +76,7 @@ export const IconText = styled.div`
   text-align: center;
   color: #616161;
   padding-top: 5px;
+  font-size: 0.9rem;
 
   @media (max-width: 600px) {
     font-size: 0.85rem;
@@ -86,7 +87,7 @@ export const Icon = styled.i`
   color: #444649;
   padding: 5px 80px;
   text-shadow: 3px 3px 10px #444649;
-  font-size: 6em;
+  font-size: 5em;
 
   @media (max-width: 600px) {
     font-size: 4em;
@@ -114,7 +115,7 @@ export const BioTextWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: 0 20px;
-  max-width: 550px;
+  max-width: 655px;
 
   @media (max-width: 800px) {
     margin: 0;
