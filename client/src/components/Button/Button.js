@@ -11,6 +11,9 @@ const NavButton = props => {
   let onClick = props.onClick;
   let fontSize = props.fontSize;
   let width = props.width;
+  let mobileFontSize = props.mobileFontSize;
+  let mobileWidth = props.mobileWidth;
+  let mobileHeight = props.mobileHeight;
 
   return (
     <CustomButton
@@ -22,6 +25,9 @@ const NavButton = props => {
       onClick={onClick}
       width={width}
       fontSize={fontSize}
+      mobileFontSize={mobileFontSize}
+      mobileWidth={mobileWidth}
+      mobileHeight={mobileHeight}
     >
       {btnName}
     </CustomButton>

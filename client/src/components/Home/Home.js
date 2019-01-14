@@ -39,6 +39,9 @@ class Home extends Component {
               onClick={this.smoothScroll}
               fontSize="1.4rem"
               width="160px"
+              mobileFontSize="1.2rem"
+              mobileWidth="140px"
+              mobileHeight="40px"
             />
           </HeaderContainer>
         </HomeContainer>

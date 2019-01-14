@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const CustomButton = styled.div`
-  // width: 180px;
   width: ${props => props.width};
   height: 45px;
   display: flex;
@@ -11,7 +10,6 @@ export const CustomButton = styled.div`
   border: ${props => props.border};
   margin: 10px;
   padding: 10px;
-  // font-size: 1.2rem;
   font-size: ${props => props.fontSize};
   font-family: 'Arvo', serif;
 
@@ -20,5 +18,11 @@ export const CustomButton = styled.div`
     color: ${props => props.hoverFontColor};
     cursor: pointer;
     border-color: ${props => props.borderColor};
+  }
+
+  @media (max-width: 600px) {
+    font-size: ${props => props.mobileFontSize}
+    width: ${props => props.mobileWidth}
+    height: ${props => props.mobileHeight}
   }
 `;
