@@ -44,12 +44,12 @@ export const ThumbnailContainer = styled.div`
 export const Thumbnail = styled.img`
   margin: 15px;
   border: 5px solid black;
+  transition: transform 0.2s ease-out 0s;
 
   &:hover {
     cursor: pointer;
     transition: 0.4s;
     transform: scale(1.05);
-    z-index: 0;
   }
 `;
 

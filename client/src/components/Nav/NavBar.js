@@ -17,7 +17,6 @@ class NavBar extends Component {
   };
 
   toggle = () => {
-    console.log('click');
     this.setState(prevState => ({
       dropdownOpen: !prevState.dropdownOpen,
     }));
