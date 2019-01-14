@@ -73,15 +73,17 @@ export const ModalTextWrapper = styled.div`
 
 export const ModalTitle = styled.h2`
   font-family: 'Arvo', serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #444649;
 `;
 
 export const ModalSubTitle = styled.h4`
   font-family: 'Arvo', serif;
-  font-size: 1.2rem;
-  color: #c0c0c0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  opacity: 0.7;
+  color: #444649;
 `;
 
 export const ModalDescription = styled.p`
