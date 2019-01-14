@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
   background: #444649;
-  padding: 100px;
+  padding: 100px 0;
   font-family: 'Arvo', serif;
 `;
 

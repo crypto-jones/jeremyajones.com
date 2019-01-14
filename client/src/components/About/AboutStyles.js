@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AboutContainer = styled.div`
   background: #fffdff;
   font-family: 'Arvo', serif;
-  padding: 100px;
+  padding: 100px 0;
 `;
 
 export const ContentWrapper = styled.div`
