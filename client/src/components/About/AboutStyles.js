@@ -28,7 +28,8 @@ export const AboutHeader = styled.div`
 export const AboutSubHeader = styled.div`
   font-size: 1.8rem;
   font-weight: 600;
-  color: #c0c0c0;
+  color: #444649;
+  opacity: 0.7;
   margin-top: 60px;
 
   @media (max-width: 600px) {
@@ -61,7 +62,8 @@ export const IconTextWrapper = styled.div`
 `;
 
 export const IconHeader = styled.div`
-  color: #c0c0c0
+color: #444649;
+opacity: 0.7;
   font-size: 1.25rem
   font-weight: 600;
 

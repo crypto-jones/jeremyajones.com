@@ -32,7 +32,7 @@ export const NavLink = styled.div`
 
   &:hover {
     cursor: pointer;
-    color: #c0c0c0;
+    color: #fffdff;
   }
 
   @media (max-width: 800px) {
