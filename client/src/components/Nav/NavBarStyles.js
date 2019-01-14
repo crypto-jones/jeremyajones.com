@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
+import { DropdownMenu } from 'reactstrap';
 
 export const NavBarContainer = styled.div`
   height: 50px;
@@ -56,5 +56,6 @@ export const DropdownMenuWrapper = styled(DropdownMenu)`
     width: 100vw;
     background: #182327;
     border-radius: 0;
+    margin-top: 0;
   }
 `;

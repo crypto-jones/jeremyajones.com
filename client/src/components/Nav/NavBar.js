@@ -23,68 +23,84 @@ class NavBar extends Component {
     }));
   };
 
-  smoothScrollHome() {
+  smoothScrollHome = () => {
     scroller.scrollTo('Home', {
       duration: 500,
       delay: 1,
       smooth: true,
     });
-  }
 
-  smoothScrollAbout() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  };
+
+  smoothScrollAbout = () => {
     scroller.scrollTo('About', {
       duration: 500,
       delay: 1,
       smooth: true,
     });
-  }
 
-  smoothScrollProjects() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  };
+
+  smoothScrollProjects = () => {
     scroller.scrollTo('Projects', {
       duration: 500,
       delay: 1,
       smooth: true,
     });
-  }
 
-  smoothScrollContact() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  };
+
+  smoothScrollContact = () => {
     scroller.scrollTo('Contact', {
       duration: 500,
       delay: 1,
       smooth: true,
     });
-  }
+
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  };
 
   render() {
     return (
       <Element name="NavBar">
-        <NavBarContainer>
-          <NavLinkWrapper>
-            <MediaQuery minWidth={801}>
-              <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
-              <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
-              <NavLink onClick={this.smoothScrollProjects}>PORTFOLIO</NavLink>
-              <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
-            </MediaQuery>
-            <MediaQuery maxWidth={800}>
-              <Hamburger className="fas fa-bars" onClick={this.toggle} />
-            </MediaQuery>
-          </NavLinkWrapper>
-
-          {/* Dropdown */}
-          <Dropdown
-            isOpen={this.state.dropdownOpen}
-            toggle={this.toggle}
-            inNavbar={true}
-          >
-            <DropdownMenuWrapper>
-              <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
-              <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
-              <NavLink onClick={this.smoothScrollProjects}>PORTFOLIO</NavLink>
-              <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
-            </DropdownMenuWrapper>
-          </Dropdown>
-        </NavBarContainer>
+        <Dropdown
+          isOpen={this.state.dropdownOpen}
+          toggle={this.toggle}
+          inNavbar={true}
+        >
+          <NavBarContainer>
+            <NavLinkWrapper>
+              <MediaQuery minWidth={801}>
+                <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
+                <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
+                <NavLink onClick={this.smoothScrollProjects}>PORTFOLIO</NavLink>
+                <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
+              </MediaQuery>
+              <MediaQuery maxWidth={800}>
+                <Hamburger className="fas fa-bars" onClick={this.toggle} />
+                <DropdownMenuWrapper>
+                  <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
+                  <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
+                  <NavLink onClick={this.smoothScrollProjects}>
+                    PORTFOLIO
+                  </NavLink>
+                  <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
+                </DropdownMenuWrapper>
+              </MediaQuery>
+            </NavLinkWrapper>
+          </NavBarContainer>
+        </Dropdown>
       </Element>
     );
   }
