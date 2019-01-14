@@ -41,7 +41,7 @@ export const NavLink = styled.div`
 `;
 
 export const Hamburger = styled.div`
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   color: #9d967c;
   margin-right: 25px;
 

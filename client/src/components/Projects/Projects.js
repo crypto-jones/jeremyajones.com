@@ -134,11 +134,11 @@ class Projects extends Component {
               >
                 <Button
                   name="Full Portfolio"
-                  color="#fffdff"
-                  border="2px solid #fffdff"
-                  bgColor="#fffdff"
+                  color="#c0c0c0"
+                  border="2px solid #c0c0c0"
+                  bgColor="#c0c0c0"
                   hoverFontColor="#444649"
-                  borderColor="#fffdff"
+                  borderColor="#c0c0c0"
                 />
               </a>
             </ButtonWrapper>

@@ -70,7 +70,7 @@ export const Astyle = styled.a`
   font-size: 2.8em;
 
   &:hover {
-    color: #c0c0c0;
+    color: #fffdff;
   }
 
   @media (max-width: 600px) {
