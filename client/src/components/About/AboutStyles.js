@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AboutContainer = styled.div`
   background: #fffdff;
   font-family: 'Arvo', serif;
-  padding-bottom: 100px;
+  padding: 100px;
 `;
 
 export const ContentWrapper = styled.div`
@@ -18,7 +18,7 @@ export const AboutHeader = styled.div`
   font-size: 3rem;
   font-weight: 600;
   color: #444649;
-  padding: 50px 0 40px 0;
+  padding: 0 0 40px 0;
 
   @media (max-width: 600px) {
     font-size: 2.5rem;

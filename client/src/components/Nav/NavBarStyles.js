@@ -16,11 +16,16 @@ export const NavLinkWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: 1000px) {
+    margin-left: 100px;
+  }
 `;
 
 export const NavLink = styled.div`
   color: #9d967c;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
 
   &:hover {
     cursor: pointer;

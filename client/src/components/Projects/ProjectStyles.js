@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
   background: #444649;
-  padding-bottom: 100px;
+  padding: 100px;
   font-family: 'Arvo', serif;
 `;
 
@@ -16,7 +16,6 @@ export const ProjectHeader = styled.div`
   font-size: 3rem;
   font-weight: 600;
   color: #fffdff;
-  padding-top: 50px;
 
   @media (max-width: 600px) {
     font-size: 2.5rem;

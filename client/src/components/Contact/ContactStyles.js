@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   background: #182327;
-  padding-bottom: 60px;
+  padding: 100px 0 60px 0;
   font-family: 'Arvo', serif;
 `;
 
@@ -16,7 +16,6 @@ export const ContactHeader = styled.div`
   font-size: 3rem;
   font-weight: 600;
   color: #9d967c;
-  padding-top: 50px;
 
   @media (max-width: 600px) {
     font-size: 2.5rem;

@@ -11,12 +11,6 @@ import {
 } from './HomeStyles';
 
 class Home extends Component {
-  // componentDidMount() {
-  //   Events.scrollEvent.register('begin', function(to, element) {});
-  //   Events.scrollEvent.register('end', function(to, element) {});
-  //   scrollSpy.update();
-  // }
-
   smoothScroll() {
     scroller.scrollTo('NavBar', {
       duration: 500,
@@ -24,11 +18,6 @@ class Home extends Component {
       smooth: true,
     });
   }
-
-  // componentWillUnmount() {
-  //   Events.scrollEvent.remove('begin');
-  //   Events.scrollEvent.remove('end');
-  // }
 
   render() {
     return (
