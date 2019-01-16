@@ -182,7 +182,7 @@ class Projects extends Component {
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-            <Astyle href="https://youtu.be/j7jHC1eFPY8" target="_blank">
+            <Astyle href="https://youtu.be/2QY0qJcTlac" target="_blank">
               <i className="fab fa-youtube fa-2x" />
             </Astyle>
           </ModalFooter>
