@@ -22,7 +22,7 @@ import {
 
 import Button from '../Button/Button';
 
-import proofd from '../../assets/01.jpg';
+import anchored from '../../assets/01.jpg';
 import cryptoGym from '../../assets/02.jpg';
 import profJones from '../../assets/03.jpg';
 import bcad from '../../assets/04.jpg';
@@ -34,7 +34,7 @@ const fullSize = { width: '100%' };
 
 class Projects extends Component {
   state = {
-    modalProofd: false,
+    modalAnchored: false,
     modalCrytpoGym: false,
     modalProfJones: false,
     modalBCAD: false,
@@ -42,9 +42,9 @@ class Projects extends Component {
     modalWalletWatcher: false,
   };
 
-  toggleProofd = () => {
+  toggleAnchored = () => {
     this.setState({
-      modalProofd: !this.state.modalProofd,
+      modalAnchored: !this.state.modalAnchored,
     });
   };
 
@@ -89,10 +89,10 @@ class Projects extends Component {
             </ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
-                src={proofd}
+                src={anchored}
                 style={thumbSize}
-                onClick={this.toggleProofd}
-                alt="Proofd"
+                onClick={this.toggleAnchored}
+                alt="Anchored"
               />
               <Thumbnail
                 src={cryptoGym}
@@ -147,37 +147,37 @@ class Projects extends Component {
           </ContentWrapper>
         </ProjectContainer>
 
-        {/* Modal Proofd*/}
-        <Modal isOpen={this.state.modalProofd} toggle={this.toggleProofd}>
+        {/* Modal Anchored*/}
+        <Modal isOpen={this.state.modalAnchored} toggle={this.toggleAnchored}>
           <ModalBody>
             <a
-              href="https://proofd.app"
+              href="https://anchored.app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={proofd} style={fullSize} alt="Proofd" />
+              <FullSize src={anchored} style={fullSize} alt="Anchored" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
-              <ModalTitle>Proofd</ModalTitle>
+              <ModalTitle>Anchored</ModalTitle>
               <ModalSubTitle>
                 A blockchain enabled verification platform
               </ModalSubTitle>
               <ModalDescription>
-                Proofd allows users to securely link a hash of any data, such as
+                Anchored allows users to securely link a hash of any data, such as
                 important documents, to the Bitcoin blockchain. It was built
                 with React, Redux, Node.js, Express, and PostgreSQL with
                 Chainpoint, DocuSign, Auth0, and Stripe API integration.
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleProofd}>
-            <Astyle href="https://proofd.app" target="_blank">
+          <ModalFooter toggle={this.toggleAnchored}>
+            <Astyle href="https://anchored.app" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{' '}
             <Astyle
-              href="https://github.com/Lambda-School-Labs/proofd.app"
+              href="https://github.com/Lambda-School-Labs/anchored.app"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
