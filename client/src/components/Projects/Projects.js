@@ -127,7 +127,7 @@ class Projects extends Component {
             </ThumbnailContainer>
             <ButtonWrapper>
               <a
-                href="https://www.thehackhive.com/profile/jeremyjones"
+                href="https://jeremyjones.hackhivebeta.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: 'none' }}
