@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { DropdownMenu } from 'reactstrap';
-// import { Link } from 'react-scroll';
 
 export const NavBarContainer = styled.div`
   height: 50px;
@@ -27,32 +26,18 @@ export const NavLinkWrapper = styled.div`
 `;
 
 export const NavLink = styled.div`
-  color: #9d967c !important;
+  color: #9d967c;
   font-weight: 600;
 
   &:hover {
     cursor: pointer;
-    color: #fffdff !important;
+    color: #fffdff;
   }
 
   @media (max-width: 800px) {
     padding: 10px 20px;
   }
 `;
-
-// export const NavLinkMobile = styled.div`
-//   color: #9d967c !important;
-//   font-weight: 600;
-
-//   &:hover {
-//     cursor: pointer;
-//     color: #fffdff !important;
-//   }
-
-//   @media (max-width: 800px) {
-//     padding: 10px 20px;
-//   }
-// `;
 
 export const Hamburger = styled.div`
   font-size: 1.85rem;

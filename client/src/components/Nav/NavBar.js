@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-import { Element, scroller } from 'react-scroll';
+import { Element, scroller, Link } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import { Dropdown } from 'reactstrap';
 
 import {
   NavBarContainer,
   NavLink,
-  // NavLinkMobile,
   NavLinkWrapper,
   Hamburger,
   DropdownMenuWrapper,
@@ -83,45 +82,49 @@ class NavBar extends Component {
           <NavBarContainer>
             <NavLinkWrapper>
               <MediaQuery minWidth={801}>
-                <NavLink
-                  // activeClass="active"
-                  // to="Home"
-                  // spy={true}
-                  // smooth={true}
-                  // duration={500}
-                  onClick={this.smoothScrollHome}
-                >
-                  HOME
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="Home"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    HOME
+                  </Link>
                 </NavLink>
-                <NavLink
-                  // activeClass="active"
-                  // to="About"
-                  // spy={true}
-                  // smooth={true}
-                  // duration={500}
-                  onClick={this.smoothScrollAbout}
-                >
-                  ABOUT
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="About"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    ABOUT
+                  </Link>
                 </NavLink>
-                <NavLink
-                  // activeClass="active"
-                  // to="Projects"
-                  // spy={true}
-                  // smooth={true}
-                  // duration={500}
-                  onClick={this.smoothScrollProjects}
-                >
-                  PORTFOLIO
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="Projects"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    PORTFOLIO
+                  </Link>
                 </NavLink>
-                <NavLink
-                  // activeClass="active"
-                  // to="Contact"
-                  // spy={true}
-                  // smooth={true}
-                  // duration={500}
-                  onClick={this.smoothScrollContact}
-                >
-                  CONTACT
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="Contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    CONTACT
+                  </Link>
                 </NavLink>
               </MediaQuery>
               <MediaQuery maxWidth={800}>
