@@ -81,7 +81,7 @@ class NavBar extends Component {
         >
           <NavBarContainer>
             <NavLinkWrapper>
-              <MediaQuery minWidth={801} orientation="landscape">
+              <MediaQuery minWidth={801}>
                 <NavLink>
                   <Link
                     activeClass="active"
@@ -127,7 +127,7 @@ class NavBar extends Component {
                   </Link>
                 </NavLink>
               </MediaQuery>
-              <MediaQuery maxWidth={800} orientation="portrait">
+              <MediaQuery maxWidth={800}>
                 <Hamburger className="fas fa-bars" onClick={this.toggle} />
                 <DropdownMenuWrapper>
                   <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
