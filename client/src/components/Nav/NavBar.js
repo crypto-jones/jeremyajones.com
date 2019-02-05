@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './NavBar.css';
 import { Element, scroller } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import { Dropdown } from 'reactstrap';
@@ -6,6 +7,7 @@ import { Dropdown } from 'reactstrap';
 import {
   NavBarContainer,
   NavLink,
+  NavLinkMobile,
   NavLinkWrapper,
   Hamburger,
   DropdownMenuWrapper,
@@ -81,20 +83,58 @@ class NavBar extends Component {
           <NavBarContainer>
             <NavLinkWrapper>
               <MediaQuery minWidth={801}>
-                <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
-                <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
-                <NavLink onClick={this.smoothScrollProjects}>PORTFOLIO</NavLink>
-                <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
+                <NavLink
+                  activeClass="active"
+                  to="Home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  HOME
+                </NavLink>
+                <NavLink
+                  activeClass="active"
+                  to="About"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  ABOUT
+                </NavLink>
+                <NavLink
+                  activeClass="active"
+                  to="Projects"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  PORTFOLIO
+                </NavLink>
+                <NavLink
+                  activeClass="active"
+                  to="Contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  CONTACT
+                </NavLink>
               </MediaQuery>
               <MediaQuery maxWidth={800}>
                 <Hamburger className="fas fa-bars" onClick={this.toggle} />
                 <DropdownMenuWrapper>
-                  <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
-                  <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
-                  <NavLink onClick={this.smoothScrollProjects}>
+                  <NavLinkMobile onClick={this.smoothScrollHome}>
+                    HOME
+                  </NavLinkMobile>
+                  <NavLinkMobile onClick={this.smoothScrollAbout}>
+                    ABOUT
+                  </NavLinkMobile>
+                  <NavLinkMobile onClick={this.smoothScrollProjects}>
                     PORTFOLIO
-                  </NavLink>
-                  <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
+                  </NavLinkMobile>
+                  <NavLinkMobile onClick={this.smoothScrollContact}>
+                    CONTACT
+                  </NavLinkMobile>
                 </DropdownMenuWrapper>
               </MediaQuery>
             </NavLinkWrapper>
