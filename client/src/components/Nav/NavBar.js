@@ -7,7 +7,7 @@ import { Dropdown } from 'reactstrap';
 import {
   NavBarContainer,
   NavLink,
-  NavLinkMobile,
+  // NavLinkMobile,
   NavLinkWrapper,
   Hamburger,
   DropdownMenuWrapper,
@@ -84,38 +84,42 @@ class NavBar extends Component {
             <NavLinkWrapper>
               <MediaQuery minWidth={801}>
                 <NavLink
-                  activeClass="active"
-                  to="Home"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                  // activeClass="active"
+                  // to="Home"
+                  // spy={true}
+                  // smooth={true}
+                  // duration={500}
+                  onClick={this.smoothScrollHome}
                 >
                   HOME
                 </NavLink>
                 <NavLink
-                  activeClass="active"
-                  to="About"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                  // activeClass="active"
+                  // to="About"
+                  // spy={true}
+                  // smooth={true}
+                  // duration={500}
+                  onClick={this.smoothScrollAbout}
                 >
                   ABOUT
                 </NavLink>
                 <NavLink
-                  activeClass="active"
-                  to="Projects"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                  // activeClass="active"
+                  // to="Projects"
+                  // spy={true}
+                  // smooth={true}
+                  // duration={500}
+                  onClick={this.smoothScrollProjects}
                 >
                   PORTFOLIO
                 </NavLink>
                 <NavLink
-                  activeClass="active"
-                  to="Contact"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                  // activeClass="active"
+                  // to="Contact"
+                  // spy={true}
+                  // smooth={true}
+                  // duration={500}
+                  onClick={this.smoothScrollContact}
                 >
                   CONTACT
                 </NavLink>
@@ -123,18 +127,12 @@ class NavBar extends Component {
               <MediaQuery maxWidth={800}>
                 <Hamburger className="fas fa-bars" onClick={this.toggle} />
                 <DropdownMenuWrapper>
-                  <NavLinkMobile onClick={this.smoothScrollHome}>
-                    HOME
-                  </NavLinkMobile>
-                  <NavLinkMobile onClick={this.smoothScrollAbout}>
-                    ABOUT
-                  </NavLinkMobile>
-                  <NavLinkMobile onClick={this.smoothScrollProjects}>
+                  <NavLink onClick={this.smoothScrollHome}>HOME</NavLink>
+                  <NavLink onClick={this.smoothScrollAbout}>ABOUT</NavLink>
+                  <NavLink onClick={this.smoothScrollProjects}>
                     PORTFOLIO
-                  </NavLinkMobile>
-                  <NavLinkMobile onClick={this.smoothScrollContact}>
-                    CONTACT
-                  </NavLinkMobile>
+                  </NavLink>
+                  <NavLink onClick={this.smoothScrollContact}>CONTACT</NavLink>
                 </DropdownMenuWrapper>
               </MediaQuery>
             </NavLinkWrapper>
