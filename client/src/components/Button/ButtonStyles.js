@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CustomButton = styled.div`
   width: ${props => props.width};
@@ -12,6 +12,7 @@ export const CustomButton = styled.div`
   padding: 10px;
   font-size: ${props => props.fontSize};
   font-family: 'Arvo', serif;
+  transition: 0.15s ease-in-out;
 
   &:hover {
     background-color: ${props => props.bgColor};
