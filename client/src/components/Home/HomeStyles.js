@@ -15,12 +15,14 @@ export const HeaderContainer = styled.div`
     flex-wrap: wrap;
     position: relative;
     top: 35%;
+    padding: 0 5px;
 `;
 
 export const TextContainer = styled.div`
     -webkit-font-smoothing: antialiased;
     text-align: center;
     margin-bottom: 12px;
+    padding: 0 15px;
 
     @media (max-width: 600px) {
         margin-bottom: 8px;
