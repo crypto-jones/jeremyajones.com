@@ -1,13 +1,14 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 
 const ParticleEffects = () => {
     return (
         <Particles
-            params={{
+            options={{
+                fullScreen: { enable: false },
                 particles: {
                     number: {
-                        value: 50,
+                        value: 35,
                         density: {
                             enable: true,
                             value_area: 1000,

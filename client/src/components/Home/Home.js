@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Element, scroller } from "react-scroll";
 import NavButton from "../Button/Button";
-// import Particles from "../Particles/Particles";
+import Particles from "../Particles/Particles";
 import {
     HomeContainer,
     HeaderContainer,
@@ -23,7 +23,7 @@ class Home extends Component {
         return (
             <Element name="Home">
                 <HomeContainer>
-                    {/* <Particles /> */}
+                    <Particles />
                     <HeaderContainer>
                         <TextContainer>
                             <NameText>Jeremy Jones</NameText>
